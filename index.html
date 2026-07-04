@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Nude Gallery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    padding:40px 15px;
+    background:linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#23d5ab);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:100%;
+    max-width:650px;
+    margin:auto;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+h1{
+    color:#fff;
+    text-align:center;
+    margin-bottom:12px;
+    font-size:32px;
+}
+
+.subtitle{
+    color:#eee;
+    text-align:center;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.gallery{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.gallery a{
+    display:block;
+    border-radius:18px;
+    overflow:hidden;
+    background:#fff;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.gallery a:hover{
+    transform:translateY(-5px);
+}
+
+.gallery img{
+    width:100%;
+    display:block;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.caption{
+    padding:15px;
+    font-size:18px;
+    color:#333;
+    text-align:center;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:35px;
+    color:white;
+    text-align:center;
+    opacity:.8;
+}
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#ffffff;
+    color:#333;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:50px;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.btn:hover{
+    background:#333;
+    color:#fff;
+    transform:scale(1.08);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Your Sensitive Photo Gallery</h1>
+
+<p class="subtitle">
+Browse the gallery below. Click any image to view clear image.
+</p>
+
+<div class="gallery">
+
+<a href="https://example.com">
+<img src="https://visionbook.mit.edu/figures/blur_filters/Jules_Lincoln_1971_blur.jpg" alt="Photo 1">
+<div class="caption">...</div>
+</a>
+
+<a href="https://example.com">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB9lb3HOAy7yL6KHy1rWnDGw8v1-utqYceMBPAN8QO7A&s=10" alt="Photo 2">
+<div class="caption">...</div>
+</a>
+
+<a href="https://example.com">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtz3jEuCfbhNEbuJnnWDopMRCw6jt1vCiHI8M1ZndHzQ&s=10" alt="Photo 3">
+<div class="caption">...</div>
+</a>
+
+<a href="https://example.com">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bZ2BroKUF8KEeI2ZL-hq8q1Y4vUJtxjJqdV4x0unbg&s=10" alt="Photo 4">
+<div class="caption">...</div>
+</a>
+
+</div>
+
+<footer>
+<h2 style="
+    color:white;
+    text-align:center;
+    margin-top:25px;
+    font-weight:400;
+    line-height:1.6;
+">
+    Click any image to View clear image.
+    <br>
+    Some time you need to login to view the images; please <a href="https://example.com" class="btn">
+    Login
+</a>
+</h2>
+</footer>
+
+</div>
+
+</body>
+</html>
